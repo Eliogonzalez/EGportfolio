@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elio Gonzalez Comunicación Institucional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-name">Elio</span>
+      <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+      <span class="loader-percent" id="loaderPercent">0%</span>
+    </div>
+  </div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">EG<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="#about" class="nav-link" data-text="Sobre mí">Sobre mí</a>
+      <a href="#services" class="nav-link" data-text="Servicios">Servicios</a>
+      <a href="#experience" class="nav-link" data-text="Experiencia">Experiencia</a>
+      <a href="#portfolio" class="nav-link" data-text="Portfolio">Portfolio</a>
+      <a href="#skills" class="nav-link" data-text="Habilidades">Habilidades</a>
+      <a href="#contact" class="nav-link" data-text="Contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal-up" data-delay="0">
+        <span class="tag-dot"></span> Disponible para proyectos
+      </div>
+
+      <h1 class="hero-title">
+        <span class="hero-title-line reveal-up" data-delay="100">ELIO</span>
+        <span class="hero-title-line hero-title-line--orange reveal-up" data-delay="200">GONZÁLEZ</span>
+      </h1>
+
+      <div class="hero-subtitle reveal-up" data-delay="300">
+        <span class="typewriter" id="typewriter"></span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+
+      <p class="hero-desc reveal-up" data-delay="400">
+        Comunicación institucional · Editor de video · Productor audiovisual
+        <br/>Mendoza, Argentina
+      </p>
+
+      <div class="hero-cta reveal-up" data-delay="500">
+        <a href="#portfolio" class="btn btn--primary">Ver mi trabajo</a>
+        <a href="#contact" class="btn btn--ghost">Contactame</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="hero-counter">
+      <div class="counter-item">
+        <span class="counter-num" data-target="3">0</span><span>+</span>
+        <p>Años de exp.</p>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="30">0</span><span>+</span>
+        <p>Proyectos</p>
+      </div>
+      <div class="counter-item">
+        <span class="counter-num" data-target="2">0</span><span></span>
+        <p>Empresas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span>Comunicación Institucional</span><span class="sep">✦</span>
+      <span>Edición de Video</span><span class="sep">✦</span>
+      <span>Relaciones Públicas</span><span class="sep">✦</span>
+      <span>Producción Audiovisual</span><span class="sep">✦</span>
+      <span>Redes Sociales</span><span class="sep">✦</span>
+      <span>Transmisiones en Vivo</span><span class="sep">✦</span>
+      <span>Drone Pilot</span><span class="sep">✦</span>
+      <span>Content Strategy</span><span class="sep">✦</span>
+      <!-- duplicado para seamless loop -->
+      <span>Comunicación Institucional</span><span class="sep">✦</span>
+      <span>Edición de Video</span><span class="sep">✦</span>
+      <span>Relaciones Públicas</span><span class="sep">✦</span>
+      <span>Producción Audiovisual</span><span class="sep">✦</span>
+      <span>Redes Sociales</span><span class="sep">✦</span>
+      <span>Transmisiones en Vivo</span><span class="sep">✦</span>
+      <span>Drone Pilot</span><span class="sep">✦</span>
+      <span>Content Strategy</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-photo-wrap reveal-left">
+            <div class="about-photo-placeholder">
+            <div class="photo-initials"></div>
+            <div class="photo-ring photo-ring--1"></div>
+            <div class="photo-ring photo-ring--2"></div>
+            <div class="photo-decoration">
+              <img src="img/yo.png">
+              </div>
+            </div>
+            <div class="about-badge">
+              <span class="badge-icon">🎬</span>
+              <span>Video + Comunicación</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <div class="section-tag reveal-up">Sobre mí</div>
+          <h2 class="section-title reveal-up">Cuento historias<br/><em>que impactan.</em></h2>
+          <p class="about-desc reveal-up">
+            Soy comunicador con una amplia capacidad para articular la estrategia corporativa y la producción audiovisual. Me especializo en la creación integral de contenidos y en el desarrollo de herramientas digitales para optimizar procesos y fortalecer la comunicación institucional.
+          </p>
+          <p class="about-desc reveal-up">
+            Actualmente trabajo en <strong>Edemsa</strong> gestionando relaciones institucionales y contenido audiovisual corporativo, además de liderar estrategias digitales que conectan organizaciones con sus audiencias.
+          </p>
+          <div class="about-facts reveal-up">
+            <div class="fact"><span>📍</span> Mendoza, Argentina</div>
+            <div class="fact"><span>🎓</span> Lic. en Comunicación — Universidad de Congreso</div>
+            <div class="fact"><span>✉️</span> eliofranciscano@gmail.com</div>
+            <div class="fact"><span>📱</span> +54 9 2615 19-0254</div>
+          </div>
+          <a href="#contact" class="btn btn--primary reveal-up">Hablemos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Qué hago</div>
+        <h2 class="section-title">Mis <em>capacidades</em></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-icon">🏛️</div>
+          <h3>Comunicación Institucional</h3>
+          <p>Gestión de imagen corporativa, relaciones públicas, redacción institucional y manejo de comunicación oficial con stakeholders clave.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-up" data-delay="100">
+          <div class="service-icon">🎬</div>
+          <h3>Producción Audiovisual</h3>
+          <p>Desarrollo, producción y edición de contenido audiovisual corporativo de alta calidad. Colorimetría, etalonaje y postproducción completa.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-up" data-delay="200">
+          <div class="service-icon">📱</div>
+          <h3>Estrategia Digital</h3>
+          <p>Gestión de redes sociales, creación de contenido multiplataforma y desarrollo de estrategias de comunicación digital efectivas.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-up" data-delay="300">
+          <div class="service-icon">🚁</div>
+          <h3>Piloto de Drone</h3>
+          <p>Captura aérea profesional para campañas, eventos corporativos, publicidad y proyectos audiovisuales de gran impacto visual.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-up" data-delay="400">
+          <div class="service-icon">📡</div>
+          <h3>Transmisiones en Vivo</h3>
+          <p>Operación técnica y conducción de streaming para eventos, conferencias corporativas y programas en vivo con equipamiento profesional.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-up" data-delay="500">
+          <div class="service-icon">🎙️</div>
+          <h3>Locución y Conducción</h3>
+          <p>Presentación y conducción en vivo, locución para piezas audiovisuales, eventos y transmisiones institucionales.</p>
+          <div class="service-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Trayectoria</div>
+        <h2 class="section-title">Mi <em>experiencia</em></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Enero 2024 — Presente</div>
+          <div class="timeline-card">
+            <div class="timeline-company">EDEMSA</div>
+            <h3 class="timeline-role">Relaciones Institucionales y Contenido Audiovisual</h3>
+            <ul class="timeline-tasks">
+              <li>Desarrollo y edición de contenido audiovisual corporativo</li>
+              <li>Gestión de redes sociales y estrategias de comunicación digital</li>
+              <li>Manejo de comunicación institucional y relaciones públicas</li>
+              <li>Tareas administrativas y gestión documental</li>
+              <li>Organización de eventos institucionales</li>
+              <li>Programación de herramienta web para automatizar estadísticas de clipping de medios</li>
+            </ul>
+            <div class="timeline-tag">Empresa Distribuidora de Energía · Mendoza</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Marzo 2023 — Diciembre 2024</div>
+          <div class="timeline-card">
+            <div class="timeline-company">A Dónde Vamos</div>
+            <h3 class="timeline-role">Productor y Conductor — Programa de Streaming</h3>
+            <ul class="timeline-tasks">
+              <li>Producción y edición de contenido audiovisual para plataformas digitales</li>
+              <li>Desarrollo de estrategias de contenido y gestión de redes sociales</li>
+              <li>Creación y planificación de contenido multiplataforma</li>
+              <li>Locución y conducción en vivo</li>
+              <li>Operación técnica de transmisiones en vivo</li>
+            </ul>
+            <div class="timeline-tag">Programa de Streaming · Producción propia</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="education reveal-up">
+        <h3 class="edu-title">Formación</h3>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <span class="edu-icon">🎓</span>
+            <div>
+              <strong>Licenciatura en Comunicación</strong>
+              <p>Universidad de Congreso · 2022 — Presente</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <span class="edu-icon">🎬</span>
+            <div>
+              <strong>Realización Audiovisual</strong>
+              <p>Universidad Maza · 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Trabajos</div>
+        <h2 class="section-title">Mi <em>portfolio</em></h2>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="portfolio-filters reveal-up">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="video">Producciones</button>
+        <button class="filter-btn" data-filter="institucional">Institucional</button>
+        <button class="filter-btn" data-filter="streaming">Streaming</button>
+      </div>
+
+     <div class="portfolio-grid" id="portfolioGrid">
+
+  <!-- CARD 1: EDEMSA (Video / Institucional) -->
+  <div class="portfolio-card reveal-up" data-category="institucional" data-delay="0">
+    <div class="portfolio-card-media">
+      <iframe src="https://www.instagram.com/reel/DW84MSeDfIU/embed" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media;"></iframe>
+    </div>
+    <div class="portfolio-card-info">
+      <span class="card-category">Video · Institucional</span>
+      <h3>Contenido Corporativo EDEMSA</h3>
+      <p>Producción, filmación y edición audiovisual corporativa.</p>
+    </div>
+  </div>
+
+  <!-- CARD 2: A DÓNDE VAMOS (Streaming / Video) -->
+  <div class="portfolio-card reveal-up" data-category="streaming video" data-delay="100">
+    <div class="portfolio-card-media">
+      <!-- Ejemplo Embed de YouTube (Modificá el ID por el tuyo) -->
+      <iframe src="https://www.instagram.com/p/CwdsLBdJU7J/embed" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="portfolio-card-info">
+      <span class="card-category">Streaming · Producción</span>
+      <h3>A Dónde Vamos</h3>
+      <p>Programa de streaming e identidad multiplataforma.</p>
+    </div>
+  </div>
+
+  <!-- CARD 3: CLIPPING TOOL (Institucional) -->
+  <div class="portfolio-card reveal-up" data-category="video" data-delay="200">
+    <div class="portfolio-card-media">
+         <iframe src="https://www.instagram.com/p/DDKrWk8ymhb/embed" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="portfolio-card-info">
+      <span class="card-category">Redes Sociales · Contenido</span>
+      <h3>Trabajos con Wabi Fun Club</h3>
+      <p>Desarrollo de piezas audivisuales promocionales.</p>
+    </div>
+  </div>
+
+  <!-- CARD 4: PRODUCION AÉREA (Video) -->
+  <div class="portfolio-card reveal-up" data-category="video institucional" data-delay="300">
+    <div class="portfolio-card-media">
+      <iframe src="https://www.instagram.com/reel/DYucW7CjXPt/embed" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="portfolio-card-info">
+      <span class="card-category">Video · Drone</span>
+      <h3>Filmaciones Aéreas</h3>
+      <p>Captura y edición de material de alto impacto con Drone.</p>
+    </div>
+  </div>
+
+ <!-- CARD 5: TRANSMISIONES (Carrusel Automático) -->
+  <div class="portfolio-card reveal-up" data-category="streaming" data-delay="400">
+    <div class="portfolio-card-media auto-fade-carousel">
+      <!-- Cambia estos nombres por tus 4 fotos -->
+      <img src="img/red1.PNG" alt="Foto 1">
+      <img src="img/red2.PNG" alt="Foto 2">
+      <img src="img/red3.PNG" alt="Foto 3">
+      <img src="img/red4.PNG" alt="Foto 4">
+    </div>
+    <div class="portfolio-card-info">
+      <span class="card-category">Redes Sociales · Contenido</span>
+      <h3>Planificacion de Redes</h3>
+      <p>Desarrollo de estrategias de contenido y gestión de redes sociales.</p>
+    </div>
+  </div>
+
+  <!-- CARD 6: REDES SOCIALES (Portada clickeable hacia IG) -->
+  <div class="portfolio-card reveal-up" data-category="video" data-delay="500">
+    <!-- Enlace al video de IG -->
+    <a href="https://www.instagram.com/reel/DWhu2-tCfnx/" target="_blank" rel="noopener noreferrer" style="cursor: none;">
+      <div class="portfolio-card-media inst-ph">
+        
+        <!-- Portada local -->
+        <img src="img/red5.PNG" alt="Portada Proyectos Personales" style="width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;" />
+        
+                    
+      </div>
+    </a>
+    <div class="portfolio-card-info">
+      <span class="card-category">Proyectos · Social Media</span>
+      <h3>Proyectos personales</h3>
+      <p>Producción de piezas audiovisuales.</p>
+    </div>
+    </div>
+      
+        
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        
+        <h2 class="section-title">Mis <em>Habilidades</em></h2>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-col reveal-left">
+          <h3 class="skills-group-title">🛠 Hard</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <span>Edición de Video (Premiere Pro)</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>OBS / Transmisiones en Vivo</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Colorimetría y Etalonaje</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Operación de Cámara</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Pilotaje de Drone</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Photoshop / Illustrator</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Redacción Institucional</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-col reveal-right">
+          <h3 class="skills-group-title">💡 Soft</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill">
+              <span class="ss-icon">🗣</span>
+              <p>Comunicación efectiva</p>
+            </div>
+            <div class="soft-skill">
+              <span class="ss-icon">💡</span>
+              <p>Creatividad e iniciativa</p>
+            </div>
+            <div class="soft-skill">
+              <span class="ss-icon">🔧</span>
+              <p>Resolución de problemas</p>
+            </div>
+            <div class="soft-skill">
+              <span class="ss-icon">🔄</span>
+              <p>Adaptabilidad</p>
+            </div>
+            <div class="soft-skill">
+              <span class="ss-icon">📋</span>
+              <p>Gestión de proyectos</p>
+            </div>
+            <div class="soft-skill">
+              <span class="ss-icon">⏱</span>
+              <p>Gestión del tiempo</p>
+            </div>
+            <div class="soft-skill">
+              <span class="ss-icon">💪</span>
+              <p>Trabajo bajo presión</p>
+            </div>
+            <div class="soft-skill">
+              <span class="ss-icon">🔍</span>
+              <p>Atención al detalle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS / QUOTE ===== -->
+  <section class="quote-section">
+    <div class="quote-inner">
+      <div class="quote-text reveal-up">
+        "A un click de<br/>
+        <em>CRECER</em>"
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Contacto</div>
+        <h2 class="section-title">Trabajemos<br/><em>juntos.</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">¿Tenés un proyecto? ¿Necesitás un comunicador que combine estrategia, imagen y contenido audiovisual? Escribime.</p>
+          <div class="contact-links">
+            <a href="mailto:eliofranciscano@gmail.com" class="contact-link">
+              <span class="cl-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p>eliofranciscano@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+5492615190254" class="contact-link">
+              <span class="cl-icon">📱</span>
+              <div>
+                <strong>Teléfono</strong>
+                <p>+54 9 2615 19-0254</p>
+              </div>
+            </a>
+            <div class="contact-link">
+              <span class="cl-icon">📍</span>
+              <div>
+                <strong>Ubicación</strong>
+                <p>Mendoza, Argentina</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/eliogonzalezpastorella/" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="https://www.instagram.com/elioo_gonzalez/" class="social-btn" aria-label="Instagram">ig</a>
+            <a href="https://www.tiktok.com/@elioo_gonzalez" class="social-btn" aria-label="YouTube">tk</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" id="contactForm" action="https://formspree.io/f/xbderekk" method="POST">
+          <div class="form-group">
+            <input type="text" id="fname" name="name" placeholder=" " required />
+            <label for="fname">Tu nombre</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="femail" name="email" placeholder=" " required />
+            <label for="femail">Tu email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="fsubject" name="subject" placeholder=" " />
+            <label for="fsubject">Asunto</label>
+          </div>
+          <div class="form-group">
+            <textarea id="fmessage" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="fmessage">Tu mensaje</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span class="btn-text">Enviar mensaje</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">EG<span>.</span></div>
+      <p>© 2026 Elio González · Comunicador · Mendoza, Argentina</p>
+      <a href="#hero" class="footer-top">↑ Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
